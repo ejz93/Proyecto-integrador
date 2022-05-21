@@ -1,0 +1,45 @@
+.row{
+    padding: 50px;
+}
+div{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/*Estilo de la foto de perfil*/
+@media (min-width: 576px){
+    #fotodeperfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px gray;
+        left: 3%;
+        top: 400px;
+    }
+}
+
+@media (max-width: 575px){
+    #fotodeperfil{
+        position: absolute;
+        width: 20%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px gray;
+        left: 3%;
+        top: 580px;
+    }
+}
+
+
+/*Etiqueta nombre*/
+#nombre{
+    font-weight: bold;
+    color: white;
+}
+
+#job{
+    color: white;
+}
+
+#acerca{
+    color: white;
+}
