@@ -1,5 +1,6 @@
-<div *ngIf="persona" class="row">
-    {{persona.nombre}}
+<div *ngIf="persona">
+    <h1>{{persona.nombre}}</h1>
+    <img src="{{persona.img}}" alt="profile-pic">
     <app-logo-ap></app-logo-ap>
     <app-banner></app-banner>
 </div>

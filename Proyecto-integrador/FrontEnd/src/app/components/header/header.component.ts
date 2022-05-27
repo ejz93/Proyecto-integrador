@@ -1,8 +1,8 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { error } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
-import { Persona } from 'src/app/model/persona.model';
-import { HeaderService } from 'src/app/service/header.service';
+import { Persona } from 'src/app/models/persona';
+import { HeaderService } from 'src/app/services/header.service';
 
 @Component({
   selector: 'app-header',
