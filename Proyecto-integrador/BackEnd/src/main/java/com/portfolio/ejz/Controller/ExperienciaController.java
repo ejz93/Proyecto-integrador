@@ -15,12 +15,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/experiencia")
-
 public class ExperienciaController {
+    
     private final ExperienciaService experienciaService;
     
     public ExperienciaController(ExperienciaService experienciaService){
@@ -45,9 +44,10 @@ public class ExperienciaController {
         return new ResponseEntity<>(experiencias,HttpStatus.OK);
     }
     
-    @DeleteMapping("delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> borrarExperiencia(@PathVariable("id") Long id){
         experienciaService.deleteExperiencia(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+    
 }

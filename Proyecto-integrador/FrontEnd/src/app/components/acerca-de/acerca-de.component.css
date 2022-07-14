@@ -1,8 +1,8 @@
 .row{
-    padding: 50px;
+    padding: 20px;
 }
 div{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(44, 44, 44);
     text-align: center;
 }
 
@@ -11,8 +11,8 @@ div{
     #fotodeperfil{
         position: absolute;
         width: 15%;
-        border-radius: 100%;
-        box-shadow: 3px 3px 3px gray;
+        border-radius: 50%;
+        box-shadow: 2px 2px 2px gray;
         left: 3%;
         top: 400px;
     }

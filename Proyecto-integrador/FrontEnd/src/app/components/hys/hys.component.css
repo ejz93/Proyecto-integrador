@@ -1,4 +1,48 @@
 .row{
-    background-color: rgb(54, 230, 127);
     padding: 20px;
+}
+
+.grid-even-columns{
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 1rem;
+}
+
+div{
+    background-color: rgba(209, 209, 209, 0);
+}
+
+.titulosk{    
+    text-align: center;
+    text-decoration-line: underline;
+    justify-content: center;
+}
+
+.btn{
+    margin: 5px;
+    background-color: gray;
+    border-color: #ffc107de;
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #ffc107de;
+    border-color: #adb5bd;
+}
+
+.btn-secondary{
+    color: #fff;
+    background-color: #666666;
+    border-color: #adb5bd;
+}
+
+.nav-link{
+    justify-content: left;
+    padding: 0;
+}
+
+#main-container{
+    border: 1.5px solid rgba(255, 153, 0, 0.699);
+    border-radius: 0.2rem;
+    justify-content: center;
 }

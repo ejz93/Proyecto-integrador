@@ -1,117 +1,162 @@
-<div class="row">
-    <h1>Hard & Soft Skills</h1>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+<div class="row hys main-container">
+    <h1 class="titulosk">Hard & Soft Skills</h1>
+    <div class="text-left">
+        <button type="button" class="btn btn-success" (click)="onOpenModal('add')">
+            <a class="nav-link" style="color:white">
+                +Skill <span class="sr-only"> (current) </span>
+            </a>
+        </button>
+    </div>
+    <div class="grid-even-columns" id="main-container">
+    <div class="flow">
         <circle-progress
         [percent]="85"
-        [radius]="100"  
-        [imageSrc]="'../assets/html.png'"
-        [showImage]="true"
-        [imageHeight]="80"
-        [imageWidth]="80"                          
+        [radius]="100"
+        [imageSrc]="'{{skills.imgSkill}}'"
+        [showImage]="false"
+        [imageHeight]="100"
+        [imageWidth]="100"
+        [title]="'HTML'"
+        [showTitle]="true"                         
         [showUnits]="false"        
         [showSubtitle]="false"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
+        [outerStrokeGradient]="true"
+        [outerStrokeWidth]="10"
+        [showInnerStroke]="false"
+        [outerStrokeColor]="'orange'"
+        [outerStrokeGradientStopColor]="'black'"
+        [innerStrokeColor]="'#fcb045'"
+        [innerStrokeWidth]="10"
         [animation]="true"
         [animationDuration]="750"
+        [clockwise]="false"
         [lazy]="false"
     ></circle-progress>
     </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <div class="flow">
         <circle-progress
         [percent]="85"
-        [radius]="100"  
-        [imageSrc]="'../assets/CSS.png'"
+        [radius]="100"
+        [imageSrc]="'{{skills.imgSkill}}'"
         [showImage]="true"
-        [imageHeight]="80"
-        [imageWidth]="80"                          
+        [imageHeight]="100"
+        [imageWidth]="100"
+        [title]="'CSS'"
+        [showTitle]="false"                         
         [showUnits]="false"        
         [showSubtitle]="false"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
+        [outerStrokeGradient]="true"
+        [outerStrokeWidth]="10"
+        [showInnerStroke]="false"
+        [outerStrokeColor]="'#833ab4'"
+        [outerStrokeGradientStopColor]="'#1dabfd'"
+        [innerStrokeColor]="'#e7e8ea'"
+        [innerStrokeWidth]="10"
         [animation]="true"
         [animationDuration]="750"
+        [clockwise]="false"
         [lazy]="false"
     ></circle-progress>
     </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <div class="flow">
         <circle-progress
         [percent]="85"
-        [radius]="100"  
-        [imageSrc]="'../assets/js.png'"
+        [radius]="100"
+        [imageSrc]="'{{skills.imgSkill}}'"
         [showImage]="true"
-        [imageHeight]="80"
-        [imageWidth]="80"                          
+        [imageHeight]="100"
+        [imageWidth]="100"
+        [title]="'JS'"
+        [showTitle]="false"                         
         [showUnits]="false"        
         [showSubtitle]="false"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
+        [outerStrokeGradient]="true"
+        [outerStrokeWidth]="10"
+        [showInnerStroke]="false"
+        [outerStrokeColor]="'green'"
+        [outerStrokeGradientStopColor]="'yellow'"
+        [innerStrokeColor]="'#e7e8ea'"
+        [innerStrokeWidth]="10"
         [animation]="true"
         [animationDuration]="750"
+        [clockwise]="false"
         [lazy]="false"
     ></circle-progress>
     </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <div class="flow">
         <circle-progress
         [percent]="85"
-        [radius]="100"  
-        [imageSrc]="'../assets/grupal.png'"
+        [radius]="100"
+        [imageSrc]="'{{skills.imgSkill}}'"
         [showImage]="true"
-        [imageHeight]="80"
-        [imageWidth]="80"                          
+        [imageHeight]="100"
+        [imageWidth]="100"
+        [title]="'Angular'"
+        [showTitle]="false"                         
         [showUnits]="false"        
         [showSubtitle]="false"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
+        [outerStrokeGradient]="true"
+        [outerStrokeWidth]="10"
+        [showInnerStroke]="false"
+        [outerStrokeColor]="'#fd1d1d'"
+        [outerStrokeGradientStopColor]="'#fc7d45'"
+        [innerStrokeColor]="'#e7e8ea'"
+        [innerStrokeWidth]="10"
         [animation]="true"
         [animationDuration]="750"
+        [clockwise]="false"
         [lazy]="false"
     ></circle-progress>
     </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <div class="flow">
         <circle-progress
         [percent]="85"
-        [radius]="100"  
-        [imageSrc]="'../assets/eng.png'"
+        [radius]="100"
+        [imageSrc]="'{{skills.imgSkill}}'"
         [showImage]="true"
-        [imageHeight]="80"
-        [imageWidth]="80"                          
+        [imageHeight]="100"
+        [imageWidth]="100"
+        [title]="'Teamwork'"
+        [showTitle]="false"                         
         [showUnits]="false"        
         [showSubtitle]="false"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
+        [outerStrokeGradient]="true"
+        [outerStrokeWidth]="10"
+        [showInnerStroke]="false"
         [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
+        [outerStrokeGradientStopColor]="'#53a9ff'"
+        [innerStrokeColor]="'#e7e8ea'"
+        [innerStrokeWidth]="10"
         [animation]="true"
         [animationDuration]="750"
+        [clockwise]="false"
         [lazy]="false"
     ></circle-progress>
     </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <div class="flow">
         <circle-progress
         [percent]="85"
-        [radius]="100"  
-        [imageSrc]="'../assets/git.png'"
+        [radius]="100"
+        [imageSrc]="'{{skills.imgSkill}}'"
         [showImage]="true"
-        [imageHeight]="80"
-        [imageWidth]="80"                          
+        [imageHeight]="100"
+        [imageWidth]="100"
+        [title]="'English'"
+        [showTitle]="false"                         
         [showUnits]="false"        
         [showSubtitle]="false"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
+        [outerStrokeGradient]="true"
+        [outerStrokeWidth]="10"
+        [showInnerStroke]="false"
+        [outerStrokeColor]="'#1d4dfd'"
+        [outerStrokeGradientStopColor]="'#fc4545'"
+        [innerStrokeColor]="'#e7e8ea'"
+        [innerStrokeWidth]="10"
         [animation]="true"
         [animationDuration]="750"
+        [clockwise]="false"
         [lazy]="false"
     ></circle-progress>
     </div>
+</div>
 </div>

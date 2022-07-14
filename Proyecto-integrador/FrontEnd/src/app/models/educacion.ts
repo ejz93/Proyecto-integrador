@@ -1,5 +1,5 @@
 export interface Educacion{
-    idEdu: number;
+    idEd: number;
     tituloEd: String;
     fechaEd: number;
     descEd: String;
